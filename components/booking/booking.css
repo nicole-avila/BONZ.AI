@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&family=Sora:wght@400;700&display=swap');
+
+.search-content {
+    margin-left: 5rem;
+}
+.search {
+    width: 950px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: 3px solid #106B5B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.search__lightgreen--box {
+    border: 3px solid #55EABD;
+    width: 950px;
+    height: 176px;
+    margin: 0;
+    position: relative;
+    top: -160px;
+    left: -20px;
+    z-index: -1;
+}
+.search__select {
+    width: 950px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.search__select select {
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    width: 190px;
+    height: 45px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+}
+.search__btn  {
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    width: 190px;
+    height: 45px;
+    margin: 0 1rem 0 4rem ;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+}
+.search__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+.search__text p {
+    color: #000;
+    margin: 0;
+}
+.bedroom {
+    width: 950px;
+    height: 190px;
+
+    background: #FFFFFF;
+    border: 3px solid #106B5B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: grid;
+    grid-template-columns: 228px auto 228px;
+    grid-template-areas: 
+    "img article aside";
+}
+.bedroom__img {
+    grid-area: img;
+    width: 100%;
+    height: 190px;
+}
+.bedroom__text {
+    grid-area: article;
+    margin: 1rem;
+}
+.bedroom__text h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.bedroom__p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: .8rem 0 0 0 ;
+}
+.bedroom__p2 {
+    /* background-color: hotpink; */
+    text-transform: none;
+    margin: 1.6rem 0 0 0;
+}
+.bedroom__svg {
+    padding: 0 .5rem;
+}
+.bedroom__b {
+    margin: .5rem 0 0 0;
+}
+.bedroom__price {
+    grid-area: aside;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 1rem auto;
+}
+.bedroom__price--text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.bedroom__price p {
+    margin: 0;
+}
+.bedroom__price h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    text-transform: none;
+}
+.bedroom__price--p {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: 2.5rem;
+}
+.bedroom__btn {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    width: 190px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 1px solid #106B5B;
+}
