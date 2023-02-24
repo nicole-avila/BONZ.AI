@@ -15,24 +15,22 @@
 
 </head>
 <body>
-    <div class="grid-container">
-        <div class="topbar">
-            <div class="topbar__content">
-               <div>
-                    <img id="topbar__menu--icon" src="/image/svg/hambergermenu.svg" alt="menu icon">
-                </div> 
-                <nav class="topbar__text">
-                    <a href="#">about us</a>
-                    <a href="#">contact</a>
-                    <a href="#">book your stay</a>
-                </nav>
-            </div>
-            <img class="topbar__green--background" src="/image/svg/topbar-svg.svg" alt="two diffrent shapes in green color">   
+    <div class="topbar">
+        <div class="topbar__content">
+            <div>
+                <img id="topbar__menu--icon" src="/image/svg/hambergermenu.svg" alt="menu icon">
+            </div> 
+            <nav class="topbar__text">
+                <a href="#about__scroll">about us</a>
+                <a href="#">contact</a>
+                <a href="#">book your stay</a>
+            </nav>
         </div>
-    <div class="main-grid">
+    </div>
+    <div class="grid-container">
         <div class="hero">
             <img class="hero__image" src="../image/johny-goerend-U_diPCXCBxU-unsplash.jpg" alt="round image with mountains and aurora">
-         </div>
+        </div>
         <section class="hero__headline">
             <h1 class="hero__title">bonz.ai</h1>
             <h2 class="hero__secondline">ai driven eko living</h2>
@@ -42,21 +40,22 @@
             </article>
         </section>
         <section class="about">
-            <h2 class="about__title">about bonz.ai</h2>
-            <figure class="about__box about--darkgreen">
-                <img class="about__img" src="/image/08-night.jpg"/>
-            </figure>
-            <br>
+                <div id="about__scroll">
+                    <h2 class="about__title">about bonz.ai</h2>
+                </div>
+                <figure class="about__box about--darkgreen">
+                    <img class="about__img" src="/image/08-night.jpg"/>
+                </figure>
+                <br>
                 <figure class="about__box about--lightgreen">
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                        <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-                        <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                    <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
-                </figure>
+                </figure>   
         </section>
-        
         <footer class="footer">
-            <a href="topbar__menu--icon"><img class="footer__arrow--up" src="/image/svg/arrowcircleup.svg" alt="circle icon with arrow up"></a>
+            <a href="#topbar__menu--icon"><img class="footer__arrow--up" src="/image/svg/arrowcircleup.svg" alt="circle icon with arrow up"></a>
             <hr class="footer__line">
             <section class="footer__content">
                 <div class="footer__text">
@@ -79,7 +78,6 @@
                 </article>
             </section>
         </footer>
-    </div>
     </div>
 </body>
 </html>

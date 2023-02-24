@@ -10,17 +10,23 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
-.main-grid {
+.topbar {
+    max-width: 1500px;
+    margin: auto;
     padding: 1rem;
 }
 .topbar__text {
     font-size: 14px;
+}
+.grid-container {
+    margin: 0 .5rem;
 }
 .hero {
     display: flex;
     justify-content: center;
 }
 .hero__image {
+    margin-top: 3rem;
     width: 250px;
     height: 250px;
 }
@@ -45,9 +51,9 @@ html, body {
     text-align: center;
     margin: auto;
 }
-/* .about {
-    margin: 1rem;
-} */
+.about {
+    margin: 2.5rem auto 2rem auto;
+}
 .about__title {
     font-size: 3rem;
     display: flex;
@@ -67,96 +73,3 @@ html, body {
 .footer__media {
     margin: 1rem 2rem;
 }
-
-/* .background-img {
-    width: 100%;
-    height: 100%;
-} */
-/* .grid-container {
-    max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-} */
-/* #menu-icon {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin: 1.75rem 0 0 1.75rem;
-}
-nav {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    margin: 1.75rem;
-    z-index: 1;
-} */
-/* .topbar__text {
-    font-size: 1rem;
-}
-.topbar__green--background {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    width: 100%;
-} */
-
-
-
-
-
-
-
-/* header {
-    grid-column: 2 / 3;
-    grid-row: 2 /3;
-    margin: 2rem auto 26rem auto;
-}
-aside {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    margin: 0 0 4rem 2.75rem;
-}
-main {
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    margin: 10rem 0;
-    display: grid;
-}
-.about__title {
-    position: relative;
-    left: 15.5rem;
-}
-.about__text {
-    margin: 2.75rem;
-}
-.frame-content {
-    grid-column: 2 / 4;
-    margin: 13rem 0;
-}
-figure {
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
-    margin-top: 5rem;
-}
-section {
-    grid-column: 2 / 4;
-    grid-row: 6 / 7;
-    position: relative;
-    top: -100px;
-}
-footer {
-    grid-column: 1 / 4;
-    grid-row: 7 / 8;
-
-}
-.footer__content {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.6rem 3rem 0 2.75rem;
-
-}
-.footer__links {
-    display: flex;
-    gap: 84px;
-}
-.footer__svg {
-    align-self: flex-start;
-} */

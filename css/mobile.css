@@ -16,7 +16,7 @@
     } */
 
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     html, body {
         max-width: 100%;
         overflow-x: hidden;
@@ -29,22 +29,21 @@
     .hero__image {
         width: 450px;
         height: 450px;
+
     }
     .hero__title {
         font-size: 9rem;
         display: flex;
         justify-content: flex-start;
-        margin: 2rem 0 0 2.75rem;
+        margin: 2rem 0 0 0;
     }
     .hero__secondline {
         font-size: 4rem;
         text-align: start;
-        margin-left: 2.75rem;
     }
     .hero__content {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 2.75rem;
     }
     .hero__content p {
         text-align: left;
@@ -55,7 +54,7 @@
     .about {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: .5fr .1fr 1fr 1fr .1fr;
         margin-top: 5rem;
     }
     .about__title {
@@ -107,15 +106,84 @@
     
     .footer__content {
         display: flex;
-        justify-content: space-evenly;
-
+        justify-content: space-between;
     }
 
 }
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 960px) {
+
    .grid-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+   }
+   .topbar__green--background {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    width: 100%;
+   }
+   .topbar {
+    grid-column: auto / span 4;
+    grid-row: 1 / 2;
+    width: 100%;
+   }
+   .topbar__text {
+    font-size: 16px;
+   }
+   .hero {
+    grid-column:  1 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    /* margin-top: 4rem; */
+   }
+   .hero__headline {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+   }
+   .hero__title, .hero__secondline, .hero__content {
+    margin: 0;
+   }
+   .hero__secondline {
+    font-size: 5rem;
+   }
+   .hero__content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+   }
+   .hero__content p {
+    width: 954px;
+    font-size: 12px;
     
    }
+   .about {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+   }
+   footer {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+   }
 
+}
+@media screen and (min-width: 1200px) {
+    
+    .grid-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .hero__title {
+        font-size: 12.5rem;
+        line-height: 150px;
+    }
+    .hero__secondline {
+        font-size: 6.5rem;
+        line-height: 88px;
+        letter-spacing: 0.03em;
+    }
+    .hero__content p {
+        font-size: 1rem;
+    }
 
 }

@@ -4,38 +4,45 @@ body{
     font-family: 'Maven Pro';
     }
     .topbar {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
     .topbar__content {
-        grid-column:  1 / 3;
-        grid-row: 1 / 2;
         display: flex;
         justify-content: space-between;
-    }
-    .topbar__menu--icon {
-        width: 100%;
-    }
-    .topbar__green--background {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        z-index: -1;
         width: 100%;
     }
     .topbar__text {
         font-family: 'Maven Pro';
         font-style: normal;
         font-weight: 400;
-        /* font-size: 24px; */
         line-height: 19px;
         letter-spacing: .03em;
         display: flex;
         gap: 2rem;
         text-transform: uppercase;
-        margin: 10px 8px 0 0;
+        margin: .5rem;
     }
     .topbar__text a {
         text-decoration: none;
         color: #000;
+        position: relative;
+    }
+    .topbar__text a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #55EABD;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .4s ease-in-out;
+    }
+    .topbar__text a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
     }

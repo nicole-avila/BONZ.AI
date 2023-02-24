@@ -76,8 +76,6 @@
     font-family: 'Sora';
     font-style: normal;
     font-weight: 700;
-    /* font-size: 200px;
-    line-height: 252px; */
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
@@ -85,15 +83,12 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #000;;
     /* text-shadow: -1px 0 #ffffff, 0 1px  #ffffff, 1px 0  #ffffff, 0 -1px  #ffffff; */
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .hero__secondline {
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 700;
-    /* font-size: 105px;
-    line-height: 123px;
-    letter-spacing: 0.03em; */
     text-transform: uppercase;
 }
 /* .hero__content {
@@ -117,13 +112,41 @@
     background: #9f948f00;
     cursor: pointer;
 }
+.hero__content button {
+    position: relative;
+}
+.hero__content button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #55EABD;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.hero__content button {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+.hero__content button:hover::before,
+.hero__content button:focus::before {
+    transform: scaleX(1);
+}
+.hero__content button:before,
+.hero__content button:focus {
+    color: #ffffff;
+}
 .hero__content p {
-    /* width: 954px; */
     font-family: 'Sora';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     letter-spacing: 0.03em;
-    margin: 0;
+    /* margin: 0; */
 }

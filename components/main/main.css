@@ -3,22 +3,11 @@
 body{
 font-family: 'Maven Pro';
 }
-.about {
-
-}
 .about__title {
     font-family: 'Maven Pro';
     font-style: normal;
     font-weight: 600;
-    /* font-size: 96px;
-    line-height: 100px;
-    text-align: right; */
     letter-spacing: 0.03em;
-    /* width: 370px; */
-}
-.about__box {
-    /* width: 920px;
-    height: 720px; */
 }
 .about--lightgreen {
     border: 5px solid #55EABD;
@@ -31,6 +20,7 @@ font-family: 'Maven Pro';
     letter-spacing: 0.04em;
     /* width: 403px;
     height: 510px; */
+    padding: 1rem;
 }
 .about--darkgreen {
     border: 5px solid #106B5B;
