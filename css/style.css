@@ -188,7 +188,7 @@ html, body {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 500px;
    }
    .topbar__green--background {
     grid-column: 1 / 4;
@@ -208,6 +208,51 @@ html, body {
     grid-row: 2 / 3;
     width: 100%;
    }
+   .hero__image {
+    display: none;
+   }
+   .hero__round {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 8rem auto;
+    background-color: #106B5B;
+    overflow: hidden;
+   }
+   .hero__round::before {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(from 90deg, rgb(0 0 0 / 0%) 70%, rgb(11 78 230 / 9%) 80%, #55EABD 100%);
+    content: '';
+    left: -25%;
+    top: -25%;
+    animation: rotate 6s infinite linear;
+   }
+   .hero__round:after {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url(/image/johny-goerend-U_diPCXCBxU-unsplash.jpg);
+    background-size: 100%;
+    background-position: 0%;
+    content: '';
+    top: 1%;
+    left: 1%;
+   }
+   .hero__round, .hero__round:before, .hero__round:after {
+    border-radius: 100%;
+   }
+   @keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
    .hero__headline {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
