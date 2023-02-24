@@ -160,6 +160,7 @@ body{
     height: 45px;
     border: 1px solid #000;
     background: #ffffff;
+    transition: background-color .4s, color .4s;
     filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.35));
 }
 .bedroom__btn:hover {
