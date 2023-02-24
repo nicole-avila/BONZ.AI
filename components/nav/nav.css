@@ -5,8 +5,9 @@ body{
     }
     .topbar {
         display: flex;
-        width: 100%;
+        max-width: 1500px;
         height: 100%;
+        margin: auto;
     }
     .topbar__content {
         display: flex;
@@ -20,7 +21,7 @@ body{
         line-height: 19px;
         letter-spacing: .03em;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         text-transform: uppercase;
         margin: .5rem;
     }
@@ -45,4 +46,9 @@ body{
     .topbar__text a:hover::before {
         transform-origin: left;
         transform: scaleX(1);
+    }
+    .topbar__line {
+        border: 1px solid #106B5B;
+        max-width: 1500px;
+        margin: auto;
     }
