@@ -32,7 +32,7 @@ html, body {
     grid-template-rows: auto;
     justify-content: center;
 }
-.search{
+.search {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     width: 100%;
@@ -126,9 +126,9 @@ html, body {
         padding: 0 1rem;
     }
     .search__select select {
-        text-align: none;
+        text-align: left;
         font-size: 12px;
-        width: 20%;
+        width: 26%;
     }
     .search__btn {
         font-size: 12px;
@@ -178,7 +178,13 @@ html, body {
     .search__lightgreen--box {
         width: 950px;
         height: 176px;
-     
+    }
+    .search__select select {
+        text-align: center;
+        font-size: 16px;
+    }
+    .search__btn {
+        font-size: 16px;
     }
     .bedroom-content {
         grid-column: 1 / 4;
@@ -211,6 +217,9 @@ html, body {
     }
     .footer__content {
         justify-content: space-between;
+    }
+    .search__btn {
+        font-size: 16px;
     }
 
 }
