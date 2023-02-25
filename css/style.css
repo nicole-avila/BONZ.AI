@@ -180,7 +180,6 @@ html, body {
     .footer__media {
         width: 100%;
     }
-
 }
 @media screen and (min-width: 960px) {
 
@@ -188,7 +187,7 @@ html, body {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px;
+    grid-template-rows: 700px;
    }
    .topbar__green--background {
     grid-column: 1 / 4;
@@ -252,7 +251,6 @@ html, body {
         transform: rotate(360deg);
     }
   }
-
    .hero__headline {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
